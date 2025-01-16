@@ -4,12 +4,12 @@ We propose a novel architecture called cDAN to address the challenges of change 
 
 The proposed network comprises two main components: the Segmentor, responsible for extracting key change features and minimizing background noise, and the Conditional Adversarial Module (CAM), which enhances detection performance through discriminative adversarial interaction with the Segmentor. The Segmentor incorporates a Background Mean Subtractor and Multi-Scale Feature Fusion module to effectively handle multiscale targets and reduce noise interference.
 
-
 ![Segmentor](fig/Segmentor.png "Segmentor")
 
 ![bms](fig/BMS2.png "bms")
 ![mff](fig/MFF.png "mff")
 
+our backbone is in ./model/average_filter.py
 
 ## Requirements
 
@@ -19,6 +19,7 @@ The proposed network comprises two main components: the Segmentor, responsible f
 
 ## Run
 
+run main.py
 
 ## Prepare the dataset
 
@@ -37,6 +38,7 @@ For VL-CMU-CD, you can check this [issue](https://github.com/gmayday1997/SceneCh
 
 Please follow this [page](https://github.com/SAMMiCA/ChangeSim) to prepare the ChangeSim dataset.
 
+You can get LEVIR-CD [issue](https://chenhao.in/LEVIR/)
 
 ## reference
 
@@ -44,7 +46,3 @@ Please follow this [page](https://github.com/SAMMiCA/ChangeSim) to prepare the C
 * https://github.com/SAMMiCA/ChangeSim
 * https://github.com/DoctorKey/C-3PO
 
-
-
-
-You can get LEVIR-CD [issue](https://chenhao.in/LEVIR/)
